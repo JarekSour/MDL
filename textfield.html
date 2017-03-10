@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Material Design Lite</title>
+
+	<link rel="stylesheet" type="text/css" href="css/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/material-colors.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		.mdl-layout{
+			align-items: center;
+			justify-content: center;
+		}
+		form .mdl-textfield{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-color--gray-100">
+		<main class="mdl-layout__content">
+			<h1>TextField</h1>
+			<div class="mdl-textfield mdl-js-textfield">
+				<input id="basic" type="text" class="mdl-textfield__input">
+				<label class="mdl-textfield__label" for="basic">USER</label>
+			</div>
+
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				<input id="float" type="text" class="mdl-textfield__input">
+				<label class="mdl-textfield__label" for="float">UserName</label>
+			</div>
+
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+				<label for="search" class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="material-icons">search</i>
+				</label>
+
+				<div class="mdl-textfield__expandable-holder">
+					<input id="search" type="text" class="mdl-textfield__input">
+					<label for="search" class="mdl-textfield__label">Buscar</label>
+				</div>
+			</div>
+
+
+
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input id="username" type="text" class="mdl-textfield__input">
+					<label for="username" class="mdl-textfield__label">UserName</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input id="password" type="password" class="mdl-textfield__input">
+					<label for="password" class="mdl-textfield__label">Password</label>
+				</div>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input id="email" type="email" class="mdl-textfield__input">
+					<label for="email" class="mdl-textfield__label">Email</label>
+				</div>
+
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+					SEND
+				</button>
+				
+			</form>
+		</main>
+	</div>
+
+
+	<script type="text/javascript" src="js/material.min.js"></script>
+</body>
+</html>
